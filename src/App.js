@@ -1,8 +1,16 @@
+import { Navbar, Users } from "./components";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-blue-500">Hello World</h1>
-    </div>
+    <>
+      <div className="container mx-auto px-4 mb-10">
+        <Navbar />
+      </div>
+
+      <div className="container mx-auto px-4 mb-10">
+        <Users />
+      </div>
+    </>
   );
 }
 
