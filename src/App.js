@@ -1,16 +1,17 @@
-import { Navbar, Users } from "./components";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import AddData from "./pages/AddData";
+import EditData from "./pages/EditData";
 
 function App() {
   return (
-    <>
-      <div className="container mx-auto px-4 mb-10">
-        <Navbar />
-      </div>
-
-      <div className="container mx-auto px-4 mb-10">
-        <Users />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add-data" element={<AddData />} />
+        <Route path="/edit-data/:id" element={<EditData />} />
+      </Routes>
+    </Router>
   );
 }
 

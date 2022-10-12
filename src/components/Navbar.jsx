@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { close, menu } from "../assets/images";
 
 const navLinks = [
@@ -9,17 +10,17 @@ const navLinks = [
   },
   {
     id: "2",
-    to: "#",
+    to: "/comments",
     name: "Comments",
   },
   {
     id: "3",
-    to: "#",
+    to: "/albums",
     name: "Albums",
   },
   {
     id: "4",
-    to: "#",
+    to: "/posts",
     name: "Posts",
   },
 ];
@@ -36,8 +37,8 @@ const Navbar = () => {
 
       <ul className="sm:flex hidden items-center gap-8">
         {navLinks.map((item) => (
-          <li className="text-gray-700 hover:text-blue-800" key={item.id}>
-            <a href={item.to}>{item.name}</a>
+          <li className="text-gray-500 hover:text-blue-800" key={item.id}>
+            <NavLink to={item.to}>{item.name}</NavLink>
           </li>
         ))}
       </ul>

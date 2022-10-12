@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* Navbar */
+nav .active {
+  @apply text-blue-800 font-bold;
+}
+
 .bg-black-gradient {
   background: linear-gradient(321.55deg, #adb5bd -11.09%, #ffffff 134.57%);
 }
