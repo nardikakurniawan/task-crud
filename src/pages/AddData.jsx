@@ -5,6 +5,7 @@ import axios from "../api/axios";
 
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import Input from "../components/Input";
 
 export default function AddData() {
   const navigate = useNavigate();
@@ -41,11 +42,10 @@ export default function AddData() {
               <label htmlFor="name" className="mb-1 font-bold">
                 Name
               </label>
-              <input
+              <Input
                 type="text"
                 name="name"
                 id="name"
-                className="p-1 px-2 outline-none text-gray-500 focus:shadow-md rounded-md"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -56,11 +56,10 @@ export default function AddData() {
               <label htmlFor="email" className="mb-1 font-bold">
                 Email
               </label>
-              <input
+              <Input
                 type="email"
                 name="email"
                 id="email"
-                className="p-1 px-2 outline-none text-gray-500 focus:shadow-md rounded-md"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -71,11 +70,10 @@ export default function AddData() {
               <label htmlFor="phone" className="mb-1 font-bold">
                 Phone
               </label>
-              <input
+              <Input
                 type="text"
                 name="phone"
                 id="phone"
-                className="p-1 px-2 outline-none text-gray-500 focus:shadow-md rounded-md"
                 placeholder="Phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}

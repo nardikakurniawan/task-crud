@@ -32,7 +32,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between py-6 ">
       <div className="flex items-center gap-2">
         <img src="/logo192.png" alt="logo" className="w-10 h-10" />
-        <h1 className="text-2xl font-bold">CRUD</h1>
+        <h1 className="text-2xl font-bold">React App</h1>
       </div>
 
       <ul className="sm:flex hidden items-center gap-8">
